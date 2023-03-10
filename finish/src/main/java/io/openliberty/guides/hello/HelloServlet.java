@@ -26,11 +26,12 @@ public class HelloServlet extends HttpServlet {
 
     // tag::javadoc1[]
     /**
-     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     *      response)
      */
     // end::javadoc1[]
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException {
+            throws ServletException, IOException {
         // tag::responseString[]
         response.getWriter().append("Hello! How are you today?\n");
         // end::responseString[]
@@ -38,11 +39,12 @@ public class HelloServlet extends HttpServlet {
 
     // tag::javadoc2[]
     /**
-     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+     *      response)
      */
     // end::javadoc2[]
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException {
+            throws ServletException, IOException {
         doGet(request, response);
     }
 }
